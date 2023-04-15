@@ -15,9 +15,11 @@ public class Vetor {
     public boolean contem (Aluno aluno) {
         for(int i=0; i<totalAlunos; i++) {
             if (alunos[i].getNome().equals(aluno.getNome())) {
-                
+                return true;
             }
         }
         return false;
+    }   public int tamanho () {
+        return totalAlunos;
     }
 }
