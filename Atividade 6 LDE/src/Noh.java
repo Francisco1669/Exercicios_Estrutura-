@@ -1,17 +1,15 @@
-package ListaDuplamenteEncaixada;
-
-public class No {
-    private int elemento;
-    private No proximo;
-    private No anterior;
+public class Noh {
+    private Object elemento;
+    private Noh proximo;
+    private Noh anterior;
     
-    public No(int elemento) {
+    public Noh(Object elemento) {
         this.elemento = elemento;
         this.proximo = null;
         this.anterior = null;
     }
 
-    public int getElemento() {
+    public Object getElemento() {
         return elemento;
     }
 
@@ -19,19 +17,19 @@ public class No {
         this.elemento = elemento;
     }
 
-    public No getProximo() {
+    public Noh getProximo() {
         return proximo;
     }
 
-    public void setProximo(No proximo) {
+    public void setProximo(Noh proximo) {
         this.proximo = proximo;
     }
 
-    public No getAnterior() {
+    public Noh getAnterior() {
         return anterior;
     }
 
-    public void setAnterior(No anterior) {
+    public void setAnterior(Noh anterior) {
         this.anterior = anterior;
     }
 
