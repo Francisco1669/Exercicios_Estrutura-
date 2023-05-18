@@ -1,8 +1,9 @@
 {
     "java.project.sourcePaths": [
         "src",
+        "Recursividade/src",
         "ListaDuplamenteEncaixada",
-        "Recursividade/src"
+        "Busca Linear e Binária/BuscaLIN_BIN/src"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
