@@ -1,4 +1,4 @@
-public class LSE implements Lista {
+public class LSE implements Lista{
 
     private No inicio;
 

@@ -1,6 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Lista lista = new LSE();
+        LSE lista = new LSE();
 
         lista.insereFim(1);
         lista.insereFim(2);
