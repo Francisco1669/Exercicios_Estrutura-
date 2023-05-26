@@ -1,14 +1,12 @@
+
+
 public interface Lista {
-    public void insereInicio(No info);
-    public void insereFim(No info);
-    public boolean isVazia();
-    public boolean remove(No info);
-    public No tamanho();
-    public No add_ordenado(No info);
-
-    // Retorna uma String que representa a lista a partir do inicio até o fim
+    public void insereInicio(int info);
+    public void insereFim(int info);
+    public boolean estahVazia();
+    public boolean remove(int info);
+    public int tamanho();
     public String getListaInicio();
-
-    // Retorna uma String que representa a lista a partir do fim até o inicio
     public String getListaFim();
+    public void add_ordenado(int info);
 }

@@ -1,4 +1,5 @@
-public class LDE implements Lista {// TAD Lista duplamente encadeada
+
+public class LDE implements Lista {
 
     private No inicio;
     private No fim;
@@ -37,7 +38,7 @@ public class LDE implements Lista {// TAD Lista duplamente encadeada
     }
 
     @Override
-    public boolean isVazia() {
+    public boolean estahVazia() {
         return inicio == null || fim == null;
     }
 
@@ -111,10 +112,11 @@ public class LDE implements Lista {// TAD Lista duplamente encadeada
         return lista;
     }
 
-    
-    public void addOrdenado(No info) {
+    @Override
+    public void add_ordenado(int info) {
+
         No novo = new No(info);
-    
+
         if (inicio == null) {
             inicio = novo;
             fim = novo;
@@ -128,17 +130,18 @@ public class LDE implements Lista {// TAD Lista duplamente encadeada
             fim = novo;
         } else {
             No p = inicio;
-    
-            while (p != null && (Integer)p.getInfo() < info) {
+
+            while (p != null && p.getInfo() < info) {
                 p = p.getProximo();
             }
-    
+
             novo.setProximo(p);
             novo.setAnterior(p.getAnterior());
             p.getAnterior().setProximo(novo);
             p.setAnterior(novo);
         }
     }
+    
     
 
 }

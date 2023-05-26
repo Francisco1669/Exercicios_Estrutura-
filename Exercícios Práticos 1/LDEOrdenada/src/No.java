@@ -1,16 +1,16 @@
 public class No {
    
-    private No info;
+    private int info;
     private No proximo;
     private No anterior;
 
-    public No(No info2) {
-        this.info = info2;
+    public No(int info) {
+        this.info = info;
         this.proximo = null;
         this.anterior = null;
     }
 
-    public No getInfo() { 
+    public int getInfo() { 
         return this.info;
     }
 

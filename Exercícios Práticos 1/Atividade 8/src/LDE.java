@@ -1,3 +1,4 @@
+
 public class LDE implements Lista {// TAD Lista duplamente encadeada
 
     private No inicio;
