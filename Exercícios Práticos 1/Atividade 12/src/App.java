@@ -13,14 +13,14 @@ public class App {
         int k = scanner.nextInt();
 
         if(l >k) {
-            System.out.println("O valor de l deve ser menor que o valor de k");
+            System.out.println("O valor de l tem que ser menor que o valor de k");
             scanner.close();
             return;
         }
 
         int resultado = calcula(l, k);
 
-        System.out.println("O resultado do somatório é: " + resultado);
+        System.out.println("O resultado do somatório é: " +resultado);
 
         scanner.close();
     }
